@@ -17,29 +17,53 @@
 /* Promotes maintainability, testability and readability */
 /* The dependencies of the application are defined on Modules*/
 
-angular /* AngularJS library*/
-        /* Application Name*/
-  .module('learnAngularApp',
-  /* Dependencies*/
-  [
-    'ngAnimate',
-    'ngCookies',
-    'ngResource',
-    'ngRoute',
-    'ngSanitize',
-    'ngTouch'
-  ])
-  .config(function ($routeProvider) {
-    $routeProvider
-      .when('/', {
-        templateUrl: 'views/expressions.html',
-        controller: 'ExpressionsCtrl'
-      })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
-      })
-      .otherwise({
-        redirectTo: '/'
-      });
+/* Enclosing Javascript in a Closure is a Good Practice*/
+(function() {
+
+  var app = angular/* AngularJS library*/
+    /* Application Name*/
+    .module('learnAngularApp',
+    /* Dependencies*/
+    [
+      'ngAnimate',
+      'ngCookies',
+      'ngResource',
+      'ngRoute',
+      'ngSanitize',
+      'ngTouch'
+    ])
+    .config(function ($routeProvider) {
+      $routeProvider
+        .when('/', {
+          templateUrl: 'views/expressions.html',
+          controller: 'ExpressionsCtrl'
+        })
+        .when('/controllers', {
+          templateUrl: 'views/controllers.html',
+          controller: 'ControllerCtrl'
+        })
+        .when('/directives', {
+          templateUrl: 'views/directives.html',
+          controller: 'DirectivesCtrl'
+        })
+        .otherwise({
+          redirectTo: '/'
+        });
+    });
+
+  /* Controllers */
+  /* A controller is attached to the application */
+  app.controller('FooterController', function(){
+
+    /* Storing Data inside the Controller */
+    // In order to achieve this, we need to set an Object to a property in the Controller
+    this.footer = footer;
+
   });
+
+  var footer = {
+    projectName: 'AngularJS: Test-Driven Learning'
+  };
+
+
+})();

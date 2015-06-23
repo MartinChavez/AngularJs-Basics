@@ -2,7 +2,7 @@
 <html class="no-js">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Learn Angular</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -31,11 +31,10 @@
           </div>
 
           <div class="collapse navbar-collapse" id="js-navbar-collapse">
-
             <ul class="nav navbar-nav">
               <li class="active"><a href="#/">Expressions</a></li>
-              <li><a ng-href="#/about">About</a></li>
-              <li><a ng-href="#/">Contact</a></li>
+              <li><a ng-href="#/controllers">Controllers</a></li>
+              <li><a ng-href="#/directives">Directives</a></li>
             </ul>
           </div>
         </div>
@@ -46,11 +45,16 @@
     <div ng-view=""></div>
     </div>
 
-    <div class="footer">
+
+    <!-- Attaching a Controller -->
+    <!-- In order to achieve this, you need to use the ng-controller Directive -->
+    <!-- You are attaching this controller to an element inside of HTML tags-->
+    <!-- You can create an alias with the 'as' keyword -->
+    <div class="footer" ng-controller="FooterController as footerController">
       <div class="container">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+        <p>{{footerController.footer.projectName}}</p>
       </div>
-    </div>
+    </div><!-- The scope of the controller is only inside the closing <div> -->
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
@@ -69,7 +73,8 @@
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/expressions.js"></script>
-        <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/controllers/controllers.js"></script>
+        <script src="scripts/controllers/directives.js"></script>
         <!-- endbuild -->
 </body>
 </html>

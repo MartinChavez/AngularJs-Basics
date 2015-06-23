@@ -1,13 +1,42 @@
 <!-- Directives -->
 <!-- A Directive is a marker on a HTML tag that tells Angular to run or reference Javascript code-->
+<!-- In other words, they are HTML annotations that trigger Javascript behaviours -->
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Directives</title>
-</head>
-<body>
+<div class="jumbotron">
+  <h1>Directives</h1>
+  <p class="lead">
+    A Directive is a marker on a HTML tag that tells Angular to run or reference Javascript code
+  </p>
+</div>
 
-</body>
-</html>
+<div class="row marketing">
+  <p>
+    Adding a button by ng-show="showButton" (showButton === true)
+  </p>
+  <p class="lead">
+    ng-show and ng-hide
+  </p>
+  <!-- ng-show Directive -->
+  <!-- You can specify an expression that will trigger the "showing" of the element -->
+  <button class="btn" ng-show="showButton"> Show button</button>
+
+  <!-- If the expression is falsy, ng-show will not show the element -->
+  <button class="btn" ng-show="undefinedVariable">Undefined Button</button>
+
+  <!-- ng-show Directive -->
+  <!-- You can specify an expression that will trigger the "not-showing" of the element -->
+  <button class="btn" ng-hide="showButton"> Hide button</button>
+
+  <br/>
+  <br/>
+  <p class="lead">
+    ng-repeat
+  </p>
+  <!-- ng-repeat Directive -->
+  <!-- Allows you to repeat a section for each item of the array -->
+  <div ng-repeat="directive in directives">
+    <p>Directive: {{ directive.name }} </p>
+  </div>
+
+</div>
+
