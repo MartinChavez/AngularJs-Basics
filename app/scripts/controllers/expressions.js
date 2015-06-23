@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name learnAngularApp.controller:MainCtrl
+ * @name learnAngularApp.controller:ExpressionsCtrl
  * @description
- * # MainCtrl
+ * # ExpressionsCtrl
  * Controller of the learnAngularApp
  */
 angular.module('learnAngularApp')
-  .controller('MainCtrl', function ($scope) {
+  .controller('ExpressionsCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
