@@ -12,9 +12,15 @@ angular.module('learnAngularApp')
 
 var directives = [
   {
-    name: "ng-show"
+    name: "ng-show",
+    number: 0,
+    image: "http://res.cloudinary.com/buddahbelly/image/upload/v1423072364/brilliantbritz/angular-js.png"
   },
   {
-    name: "ng-hide"
+    name: "ng-hide",
+    number: 1
+  },{
+    name: "ng-repeat",
+    number: 2
   }
 ];

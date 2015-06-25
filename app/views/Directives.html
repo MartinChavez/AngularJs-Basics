@@ -10,12 +10,13 @@
 </div>
 
 <div class="row marketing">
+  <h1>Built-in Directives</h1>
   <p>
     Adding a button by ng-show="showButton" (showButton === true)
   </p>
-  <p class="lead">
+  <h2>
     ng-show and ng-hide
-  </p>
+  </h2>
   <!-- ng-show Directive -->
   <!-- You can specify an expression that will trigger the "showing" of the element -->
   <button class="btn" ng-show="showButton"> Show button</button>
@@ -29,14 +30,52 @@
 
   <br/>
   <br/>
-  <p class="lead">
+  <h2>
     ng-repeat
-  </p>
+  </h2>
   <!-- ng-repeat Directive -->
   <!-- Allows you to repeat a section for each item of the array -->
   <div ng-repeat="directive in directives">
     <p>Directive: {{ directive.name }} </p>
+    <br/>
   </div>
+  <br/>
+  <h1>Filters</h1>
+  <!-- Filters -->
+  <!-- You can create filters with a pipe | -->
+  <!-- Filters take the result of the first expression and send the output into the second expression -->
+  <p>You can create filters with a pipe  | </p>
+  <p>Currency = {{ 5 | currency }} </p>
+  <p>Currency = {{ 0 | currency }} </p>
+  <p>Currency = {{ 1 | currency }} </p>
+  <br/>
 
+  <!-- Formatting with Filters -->
+  <!-- You can specify a filter with the following syntax-->
+  <!-- {{ data | filter:options }}-->
+  <h1>Formatting with Filters </h1>
+  <p>You can specify a filter with the following syntax { { data | filter:options } } </p>
+  <p>Date = {{'06242015' | date:'MM/dd/yyyy' }} </p>
+  <p>Lowercase = {{'LowerCase' | lowercase }} </p>
+  <p>Uppercase = {{'UpperCase' | uppercase }} </p>
+  <p>LimitTo = {{'abcdefghijklm' | limitTo:5 }} </p>
+  <div ng-repeat="directive in directives | limitTo:1">
+    <p>LimitTo: {{ directive.name }} </p>
+    <br/>
+  </div>
+  <!-- OrderBy will list the items by descending (using -) or ascending order -->
+  <span>Order By</span>
+  <div ng-repeat="directive in directives | orderBy:'-number'">
+    <p>{{ directive.number }} </p>
+    <br/>
+  </div>
+  <h1>ng-src</h1>
+  <!-- By adding the Angular Expression inside a src attribute,
+  You get an error since the browser tries to load the image before the Expression evaluates-->
+
+  <!--ng-src -->
+  <!-- To render the image, we need to use ng-src directive -->
+  <p> To render the image, we need to use ng-src directive </p>
+  <img ng-src="{{directives[0].image}}" alt="Javascript" height="100px"/>
 </div>
 
