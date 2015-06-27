@@ -4,6 +4,7 @@
 
 <div class="jumbotron">
   <h1>Directives</h1>
+
   <p class="lead">
     A Directive is a marker on a HTML tag that tells Angular to run or reference Javascript code
   </p>
@@ -11,9 +12,11 @@
 
 <div class="row marketing">
   <h1>Built-in Directives</h1>
+
   <p>
     Adding a button by ng-show="showButton" (showButton === true)
   </p>
+
   <h2>
     ng-show and ng-hide
   </h2>
@@ -24,12 +27,13 @@
   <!-- If the expression is falsy, ng-show will not show the element -->
   <button class="btn" ng-show="undefinedVariable">Undefined Button</button>
 
-  <!-- ng-show Directive -->
+  <!-- ng-hide Directive -->
   <!-- You can specify an expression that will trigger the "not-showing" of the element -->
   <button class="btn" ng-hide="showButton"> Hide button</button>
 
   <br/>
   <br/>
+
   <h2>
     ng-repeat
   </h2>
@@ -40,13 +44,17 @@
     <br/>
   </div>
   <br/>
+
   <h1>Filters</h1>
   <!-- Filters -->
   <!-- You can create filters with a pipe | -->
   <!-- Filters take the result of the first expression and send the output into the second expression -->
-  <p>You can create filters with a pipe  | </p>
+  <p>You can create filters with a pipe | </p>
+
   <p>Currency = {{ 5 | currency }} </p>
+
   <p>Currency = {{ 0 | currency }} </p>
+
   <p>Currency = {{ 1 | currency }} </p>
   <br/>
 
@@ -54,17 +62,24 @@
   <!-- You can specify a filter with the following syntax-->
   <!-- {{ data | filter:options }}-->
   <h1>Formatting with Filters </h1>
+
   <p>You can specify a filter with the following syntax { { data | filter:options } } </p>
+
   <p>Date = {{'06242015' | date:'MM/dd/yyyy' }} </p>
+
   <p>Lowercase = {{'LowerCase' | lowercase }} </p>
+
   <p>Uppercase = {{'UpperCase' | uppercase }} </p>
+
   <p>LimitTo = {{'abcdefghijklm' | limitTo:5 }} </p>
+
   <div ng-repeat="directive in directives | limitTo:1">
     <p>LimitTo: {{ directive.name }} </p>
     <br/>
   </div>
   <!-- OrderBy will list the items by descending (using -) or ascending order -->
   <span>Order By</span>
+
   <div ng-repeat="directive in directives | orderBy:'-number'">
     <p>{{ directive.number }} </p>
     <br/>
@@ -76,6 +91,80 @@
   <!--ng-src -->
   <!-- To render the image, we need to use ng-src directive -->
   <p> To render the image, we need to use ng-src directive </p>
-  <img ng-src="{{directives[0].image}}" alt="Javascript" height="100px"/>
+  <img ng-src="{{directives[0].image}}" alt="Angular" height="100px"/>
+  <br/>
+
+  <h1>ng-click</h1>
+  <!-- ng-click Directive -->
+  <p>Takes an expression to evaluate</p>
+
+  <p>When ng-click changes the value of a tab, the "tab" expression automatically gets updated</p>
+
+  <p>Expressions define a 2-way Data Binding, which means they change when a property changes</p>
+
+  <h1>ng-init</h1>
+  <p>Allows you to evaluate an expression in the current scope</p>
+
+  <h1>ng-class</h1>
+  <p>Allows to set a class to an element if an expression evaluates to a truthy value</p>
+  <p>It takes an object with the property name as the class you want to insert</p>
+  <p>The value represents the Expression to evaluate</p>
+
+  <section ng-init="tab = 1">
+    <ul class="nav nav-pills">
+      <li ng-class="{ active:tab === 1}">
+        <a href="" ng-click="tab = 1">Tab 1</a>
+      </li>
+      <li ng-class="{ active:tab === 2}">
+        <a href="" ng-click="tab = 2">Tab 2</a>
+      </li>
+      <li ng-class="{ active:tab === 3}">
+        <a href="" ng-click="tab = 3">Tab 3</a>
+      </li>
+    </ul>
+  </section>
+
+  <div class="panel" ng-show="tab === 1">
+    <h4>Tab 1</h4>
+    <p>Tab 1 Content</p>
+  </div>
+  <div class="panel" ng-show="tab === 2">
+    <h4>Tab 2</h4>
+    <p>Tab 2 Content</p>
+  </div>
+  <div class="panel" ng-show="tab === 3">
+    <h4>Tab 3</h4>
+    <p>Tab 3 Content</p>
+  </div>
+
+  <h1>Tab example with Controller</h1>
+  <p>Allows you to organize your code and to enforce separation of concerns</p>
+  <section  ng-controller="PanelController as panel">
+    <ul class="nav nav-pills">
+      <li ng-class="{ active:panel.isSelected(1)}">
+        <a href="" ng-click="panel.selectTab(1)">Tab 1</a>
+      </li>
+      <li ng-class="{ active:panel.isSelected(2)}">
+        <a href="" ng-click="panel.selectTab(2)">Tab 2</a>
+      </li>
+      <li ng-class="{ active:panel.isSelected(3)}">
+        <a href="" ng-click="panel.selectTab(3)">Tab 3</a>
+      </li>
+    </ul>
+  </section>
+  <div class="panel" ng-show="panel.isSelected(1)">
+    <h4>Tab 1</h4>
+    <p>Tab 1 Content</p>
+  </div>
+  <div class="panel" ng-show="panel.isSelected(2)">
+    <h4>Tab 2</h4>
+    <p>Tab 2 Content</p>
+  </div>
+  <div class="panel" ng-show="panel.isSelected(3)">
+    <h4>Tab 3</h4>
+    <p>Tab 3 Content</p>
+  </div>
+
+
 </div>
 

@@ -9,7 +9,7 @@
 /* It allows you to create responsive websites */
 /* It allows you to test your application */
 /* It allows you to load your application assets at once(vs loading all the assets every time the user clicks a hyperlink)
-/* It allows you to  update the web page with only new information (JSON Data) */
+ /* It allows you to  update the web page with only new information (JSON Data) */
 /* It connects well with modern Web API's */
 
 /* Modules */
@@ -18,7 +18,7 @@
 /* The dependencies of the application are defined on Modules*/
 
 /* Enclosing Javascript in a Closure is a Good Practice*/
-(function() {
+(function () {
 
   var app = angular/* AngularJS library*/
     /* Application Name*/
@@ -46,6 +46,10 @@
           templateUrl: 'views/directives.html',
           controller: 'DirectivesCtrl'
         })
+        .when('/forms', {
+          templateUrl: 'views/forms.html',
+          controller: 'FormsCtrl'
+        })
         .otherwise({
           redirectTo: '/'
         });
@@ -53,7 +57,7 @@
 
   /* Controllers */
   /* A controller is attached to the application */
-  app.controller('FooterController', function(){
+  app.controller('FooterController', function () {
 
     /* Storing Data inside the Controller */
     // In order to achieve this, we need to set an Object to a property in the Controller
@@ -64,6 +68,17 @@
   var footer = {
     projectName: 'AngularJS: Test-Driven Learning'
   };
+
+  app.controller('PanelController', function () {
+    this.tabCtrl = 1;
+    this.selectTab = function(setTab){
+      this.tabCtrl = setTab;
+    };
+
+    this.isSelected = function(checkTab){
+      return this.tabCtrl === checkTab;
+    };
+  });
 
 
 })();
