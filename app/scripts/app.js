@@ -58,11 +58,9 @@
   /* Controllers */
   /* A controller is attached to the application */
   app.controller('FooterController', function () {
-
     /* Storing Data inside the Controller */
     // In order to achieve this, we need to set an Object to a property in the Controller
     this.footer = footer;
-
   });
 
   var footer = {
