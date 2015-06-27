@@ -78,5 +78,15 @@
     };
   });
 
+  app.controller('NavController', function () {
+    this.tab = 1;
+    this.isSelected = function(checkTab){
+      return this.tab === checkTab;
+    };
+    this.selectTab = function(setTab){
+      this.tab = setTab;
+    };
+  });
+
 
 })();

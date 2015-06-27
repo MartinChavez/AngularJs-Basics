@@ -30,12 +30,12 @@
             <a class="navbar-brand" href="#/">Learn Angular</a>
           </div>
 
-          <div class="collapse navbar-collapse" id="js-navbar-collapse">
+          <div class="collapse navbar-collapse" id="js-navbar-collapse" ng-controller="NavController as nav">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="#/">Expressions</a></li>
-              <li><a ng-href="#/controllers">Controllers</a></li>
-              <li><a ng-href="#/directives">Directives</a></li>
-              <li><a ng-href="#/forms">Forms</a></li>
+              <li ng-class="{ active:nav.isSelected(1)}" ng-click="nav.selectTab(1)"><a href="#/">Expressions</a></li>
+              <li ng-class="{ active:nav.isSelected(2)}" ng-click="nav.selectTab(2)"><a href="#/conttollers">Controllers</a></li>
+              <li ng-class="{ active:nav.isSelected(3)}" ng-click="nav.selectTab(3)"><a href="#/directives">Directives</a></li>
+              <li ng-class="{ active:nav.isSelected(4)}" ng-click="nav.selectTab(4)"><a href="#/forms">Forms</a></li>
             </ul>
           </div>
         </div>

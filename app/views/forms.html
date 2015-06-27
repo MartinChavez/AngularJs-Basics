@@ -1,12 +1,64 @@
 <!-- Forms -->
-
-
 <div class="jumbotron">
   <h1>Forms</h1>
-
   <p class="lead">
-
+    Allow the application to receive user input
   </p>
 </div>
+<br/>
+<h1>ng-model</h1>
+<p>Binds the form element value to the property</p>
+<br/>
+<h1>ng-submit</h1>
+<p>Allows us to call a function when the form is submitted</p>
+<h1>Validations</h1>
+<p>First, you need to turn off Default HTML Validation</p>
+<p>You can mark the elements that are required with the 'required' attribute</p>
+<blockquote>
+  <b>Number: {{model.number}}</b>
+  <br/>
+  <b>Body: {{model.body}}</b>
+  <br/>
+  <b>Email: {{model.email}}</b>
+</blockquote>
+<form name="modelForm" ng-submit="modelForm.$valid && addModel(model)" novalidate>
+  <select ng-model="model.number" required>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+  </select>
+  <br/>
+  <textarea ng-model="model.body" required>  </textarea>
+  <br/>
+    <label for="email">Email</label>
+  <br/>
+    <input type="email" name="email" id="email" ng-model="model.email" required/>
+  <br/>
+  <br/>
+  <label for="url">URL</label>
+  <br/>
+  <input type="url" name="url" id="url" ng-model="model.url" required/>
+  <br/>
+  <br/>
+  <label for="number">Number between 5 and 10</label>
+  <br/>
+  <input type="number" name="quantity" id="number"  min="5" max="10"  ng-model="model.number" required/>
+  <br/>
+  <br/>
+  <input type="checkbox" ng-model="model.value"/>
+  <input type="checkbox" ng-model="model.value"/>
+  <br/>
+  <input type="radio" value="red" ng-model="model.color"/>
+  <input type="radio" value="green" ng-model="model.color"/>
+  <input type="radio" value="blue" ng-model="model.color"/>
+  <input type="radio" value="black" ng-model="model.color"/>
+  <br/>
+  <div>modelForm is {{modelForm.$valid}}</div>
+  <input type="submit" value="submit" class="btn btn-default"/>
+</form>
 
-
+<h1>Current Models</h1>
+<blockquote ng-repeat="model in modelList">
+  <b>Model: {{model.body}}</b>
+  <br/>
+</blockquote>
