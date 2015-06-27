@@ -46,6 +46,10 @@
           templateUrl: 'views/directives.html',
           controller: 'DirectivesCtrl'
         })
+        .when('/custom-directives', {
+          templateUrl: 'views/custom-directives.html',
+          controller: 'CustomDirectivesCtrl'
+        })
         .when('/forms', {
           templateUrl: 'views/forms.html',
           controller: 'FormsCtrl'
