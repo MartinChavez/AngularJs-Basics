@@ -110,6 +110,19 @@
     };
 
   });
+  app.directive('panels', function () {
+    return {
+      restrict: 'E',
+      templateUrl: 'views/panels.html',
+      controller: function () {
+        this.tab = 2;
+        this.isPanelSelected = function (checkTab) {
+          return this.tab === checkTab;
+        };
+      },
+      controllerAs: 'panels'
+    };
 
+  });
 
 })();
