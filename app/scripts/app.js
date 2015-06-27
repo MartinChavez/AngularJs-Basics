@@ -73,23 +73,43 @@
 
   app.controller('PanelController', function () {
     this.tabCtrl = 1;
-    this.selectTab = function(setTab){
+    this.selectTab = function (setTab) {
       this.tabCtrl = setTab;
     };
 
-    this.isSelected = function(checkTab){
+    this.isSelected = function (checkTab) {
       return this.tabCtrl === checkTab;
     };
   });
 
   app.controller('NavController', function () {
     this.tab = 1;
-    this.isSelected = function(checkTab){
+    this.isSelected = function (checkTab) {
       return this.tab === checkTab;
     };
-    this.selectTab = function(setTab){
+    this.selectTab = function (setTab) {
       this.tab = setTab;
     };
+  });
+
+  /*Directives*/
+  /*A dash in HTML translates to camelCase in Javascript */
+  app.directive('modelDirective', function () {
+    /*A configuration object defining the directive should be returned*/
+    return {
+      /*Type of directive (E for Element)*/
+      restrict: 'E',
+      templateUrl: 'views/model.html'
+    };
+
+  });
+  app.directive('modelTitle', function () {
+    return {
+      /*Type of directive (A for Attribute)*/
+      restrict: 'A',
+      templateUrl: 'views/model.html'
+    };
+
   });
 
 

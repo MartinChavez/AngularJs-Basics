@@ -1,14 +1,33 @@
-
-
 <div class="jumbotron">
   <h1>Custom Directives</h1>
-
   <p class="lead">
-
+    Allows you to reuse HTML snippets and reduce duplication
+  </p>
+  <p class="lead">
+    Directives allow you to write HTML that expresses the behaviour of your application
   </p>
 </div>
 
-<div class="row marketing">
+<h1>ng-include</h1>
+<p>Directive that allows you to make a server request for a certain file</p>
+<p>ng-include works, but there is a better way to achieve templates manipulation</p>
+<p ng-include="'views/model.html'"></p>
+<!--Template-expanding Directives
+  * Define a custom tag or attribute that is expanded or replaced
+  * These may also include Controller logic
 
-</div>
-
+Other Uses for Directives
+  *Custom Directives</p>
+  *Calling events and registering event handlers
+  *Reusing common components
+-->
+<h1>Custom Directives</h1>
+<p> By writing Custom directives, you will achieve more expressiveness</p>
+<!-- It is a good practice to not use self-closing tags, because different browsers can interpret them differently -->
+<model-directive></model-directive>
+<!-- Attribute vs Element Directives -->
+<!-- Use Element Directives for UI widgets -->
+<!-- Use Attribute Directives for mixin behaviors like a tooltip -->
+<h1>Attribute Directives</h1>
+<p> Use Attribute Directives for mixin behaviors like a tooltip</p>
+<h3 model-title></h3>
