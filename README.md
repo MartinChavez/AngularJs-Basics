@@ -3,7 +3,7 @@
 AngularJS : Run and Play
 ================
 
-A project aimed to help the user use and Learn AngularJS. Each unit contains a tutorial with concepts and examples.
+A project aimed to help the user run and play with AngularJS. Each unit contains a tutorial with concepts, examples and best practices.
 
 Topics
 ================
