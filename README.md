@@ -1,4 +1,4 @@
-<a name="README">[<img src="http://res.cloudinary.com/buddahbelly/image/upload/v1423072364/brilliantbritz/angular-js.png" width="200px" height="200px" />](https://github.com/MartinChavez/Learn-Javascript)</a>
+<a name="README">[<img src="https://pbs.twimg.com/profile_images/2149314222/square.png" width="300px" height="300px" />](https://github.com/MartinChavez/Learn-Javascript)</a>
 
 Angular : Run and Play
 ================
