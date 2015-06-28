@@ -1,12 +1,16 @@
-# learn-angular
+<a name="README">[<img src="http://res.cloudinary.com/buddahbelly/image/upload/v1423072364/brilliantbritz/angular-js.png" width="200px" height="200px" />](https://github.com/MartinChavez/Learn-Javascript)</a>
 
-This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
-version 0.11.1.
+Angular : Run and Play
+================
 
-## Build & development
+A project aimed to help the user use and Learn AngularJS. Each unit contains a tutorial with concepts and examples.
 
-Run `grunt` for building and `grunt serve` for preview.
-
-## Testing
-
-Running `grunt test` will run the unit tests with karma.
+Topics
+================
+ - Expressions
+ - Controllers
+ - Directives
+ - Custom Directives
+ - Forms
+ - Services
+ 
