@@ -40,9 +40,16 @@ Attaching a Controller
       </div>
     </div><!-- The scope of the controller is only inside the closing <div> -->
 ```
+Install
+====================
+```Terminal
+npm install
+bower install
+```
+
 Run and Play
 ====================
-```terminal
+```Terminal
 grunt serve
 ```
 <img src="https://s3-us-west-2.amazonaws.com/testdrivenlearningbucket/AngularRunAndPlay.png" />
