@@ -40,4 +40,17 @@ Run and Play
 ```terminal
 grunt serve
 ```
-[<img src="https://s3-us-west-2.amazonaws.com/testdrivenlearningbucket/AngularRunAndPlay.png" />]
+<img src="https://s3-us-west-2.amazonaws.com/testdrivenlearningbucket/AngularRunAndPlay.png" />
+
+Questions ?
+====================
+If you have any questions, please feel free to ask me:
+[Martin Chavez Aguilar](mailto:martin.chavez@live.com)
+
+Contributors
+====================
+* [Martin Chavez Aguilar](https://www.linkedin.com/in/martinchavezaguilar) - Wrote the project
+
+References
+====================
+* [Code School](https://www.codeschool.com/)
