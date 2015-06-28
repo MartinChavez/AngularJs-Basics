@@ -67,6 +67,7 @@ Modules
       'ngSanitize',
       'ngTouch'
     ])
+```
 Filters
 ====================
 ```HTML
