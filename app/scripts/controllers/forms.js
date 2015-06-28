@@ -7,6 +7,7 @@ angular.module('learnAngularApp')
 
     $scope.addModel = function (model){
       $scope.modelList.push(model);
+      /*By resetting the model, your view gets updated into a "pristine" view*/
       $scope.model = {};
     };
 

@@ -16,7 +16,7 @@
 /* Provide a way to write encapsulated functionality for the Angular application */
 /* Promotes maintainability, testability and readability */
 /* The dependencies of the application are defined on Modules*/
-/* It is a good practices to split Modules around functionality*/
+/* It is a good practice to split Modules around functionality*/
 
 /* Enclosing Javascript in a Closure is a Good Practice*/
 (function () {
