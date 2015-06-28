@@ -42,6 +42,19 @@ Attaching a Controller
       </div>
     </div><!-- The scope of the controller is only inside the closing <div> -->
 ```
+Expressions
+====================
+```HTML
+<!-- Expressions -->
+<!-- Allow you to insert dynamic values into the HTML-->
+<div class="row marketing">
+  <h4>Numerical Operations</h4>
+  <p> 5 + 5 = {{ 5 + 5 }}</p>
+  <h4>String Operations</h4>
+  <p> {{ "String"}} {{ "Operations Example"}}</p>
+</div>
+```
+
 Install
 ====================
 ```Terminal
