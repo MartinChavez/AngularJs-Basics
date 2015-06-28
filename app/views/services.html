@@ -1,0 +1,36 @@
+<div class="jumbotron">
+  <h1>Services</h1>
+  <p class="lead">
+   They give the controller additional functionality such as:
+  </p>
+  <ul>
+    <li>
+    Fetching JSON data from a web service with $http
+  </li>
+    <li>
+      Log messages to the Javascript console with $log
+    </li>
+    <li>
+      Filter an array with $filter service
+    </li>
+  </ul>
+</div>
+
+<div class="row marketing">
+<h1>$http Service</h1>
+  <p>The $http Service is used to make async requests to a server</p>
+  <p>You can use $http as a function with an options object: </p>
+  <strong> $http({ method: 'GET', url: 'example.json'});</strong>
+  <br/>
+  <br/>
+  <p>You can use one of the shortcut methods:  </p>
+    <strong>  $http.get({'example.json' , {apiKey:'key'}});</strong>
+  <br/>
+  <p>These call return a Promise object with .success() and .error</p>
+  <p>You can configure $http to fetch JSON, the result will be automatically decoded into Javascript objects and arrays</p>
+  <strong> data: {{data}} </strong>
+  <strong>data status: {{data.status}} </strong>
+  <br/>
+  <br/>
+  <p>In addition to get() requests, $http can post(), put() and delete()</p>
+</div>

@@ -37,6 +37,7 @@
               <li ng-class="{ active:nav.isSelected(3)}" ng-click="nav.selectTab(3)"><a href="#/directives">Directives</a></li>
               <li ng-class="{ active:nav.isSelected(4)}" ng-click="nav.selectTab(4)"><a href="#/custom-directives">Custom Directives</a></li>
               <li ng-class="{ active:nav.isSelected(5)}" ng-click="nav.selectTab(5)"><a href="#/forms">Forms</a></li>
+              <li ng-class="{ active:nav.isSelected(6)}" ng-click="nav.selectTab(6)"><a href="#/services">Services</a></li>
             </ul>
           </div>
         </div>
@@ -74,11 +75,13 @@
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
+        <script src="app-directives.js"></script>
         <script src="scripts/controllers/expressions.js"></script>
         <script src="scripts/controllers/controllers.js"></script>
         <script src="scripts/controllers/directives.js"></script>
         <script src="scripts/controllers/custom-directives.js"></script>
         <script src="scripts/controllers/forms.js"></script>
+        <script src="scripts/controllers/services.js"></script>
         <!-- endbuild -->
 </body>
 </html>
