@@ -42,18 +42,31 @@ Attaching a Controller
       </div>
     </div><!-- The scope of the controller is only inside the closing <div> -->
 ```
-Expressions
+Modules
 ====================
 ```HTML
-<!-- Expressions -->
-<!-- Allow you to insert dynamic values into the HTML-->
-<div class="row marketing">
-  <h4>Numerical Operations</h4>
-  <p> 5 + 5 = {{ 5 + 5 }}</p>
-  <h4>String Operations</h4>
-  <p> {{ "String"}} {{ "Operations Example"}}</p>
-</div>
-```
+/* Modules */
+/* Provide a way to write encapsulated functionality for the Angular application */
+/* Promotes maintainability, testability and readability */
+/* The dependencies of the application are defined on Modules*/
+/* It is a good practices to split Modules around functionality*/
+
+/* Enclosing Javascript in a Closure is a Good Practice*/
+(function () {
+
+  var app = angular/* AngularJS library*/
+    /* Application Name*/
+    .module('learnAngularApp',
+    /* Dependencies*/
+    [
+      'app-directives',
+      'ngAnimate',
+      'ngCookies',
+      'ngResource',
+      'ngRoute',
+      'ngSanitize',
+      'ngTouch'
+    ])
 Filters
 ====================
 ```HTML
@@ -84,7 +97,18 @@ Filters
 
   <p>LimitTo = {{'abcdefghijklm' | limitTo:5 }} </p>
 ```
-
+Expressions
+====================
+```HTML
+<!-- Expressions -->
+<!-- Allow you to insert dynamic values into the HTML-->
+<div class="row marketing">
+  <h4>Numerical Operations</h4>
+  <p> 5 + 5 = {{ 5 + 5 }}</p>
+  <h4>String Operations</h4>
+  <p> {{ "String"}} {{ "Operations Example"}}</p>
+</div>
+```
 Install
 ====================
 ```Terminal
