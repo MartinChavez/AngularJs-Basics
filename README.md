@@ -35,3 +35,9 @@ Attaching a Controller
       </div>
     </div><!-- The scope of the controller is only inside the closing <div> -->
 ```
+Run and Play
+====================
+```terminal
+grunt serve
+```
+[<img src="https://s3-us-west-2.amazonaws.com/testdrivenlearningbucket/AngularRunAndPlay.png" />]
