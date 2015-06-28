@@ -54,6 +54,36 @@ Expressions
   <p> {{ "String"}} {{ "Operations Example"}}</p>
 </div>
 ```
+Filters
+====================
+```HTML
+  <!-- Filters -->
+  <!-- You can create filters with a pipe | -->
+  <!-- Filters take the result of the first expression and send the output into the second expression -->
+  <p>You can create filters with a pipe | </p>
+
+  <p>Currency = {{ 5 | currency }} </p>
+
+  <p>Currency = {{ 0 | currency }} </p>
+
+  <p>Currency = {{ 1 | currency }} </p>
+  <br/>
+
+  <!-- Formatting with Filters -->
+  <!-- You can specify a filter with the following syntax-->
+  <!-- {{ data | filter:options }}-->
+  <h1>Formatting with Filters </h1>
+
+  <p>You can specify a filter with the following syntax { { data | filter:options } } </p>
+
+  <p>Date = {{'06242015' | date:'MM/dd/yyyy' }} </p>
+
+  <p>Lowercase = {{'LowerCase' | lowercase }} </p>
+
+  <p>Uppercase = {{'UpperCase' | uppercase }} </p>
+
+  <p>LimitTo = {{'abcdefghijklm' | limitTo:5 }} </p>
+```
 
 Install
 ====================
