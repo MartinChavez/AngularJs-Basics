@@ -6,7 +6,7 @@ angular.module('learnAngularApp')
   /* In order to achieve dependency injection, you need to add the services as an argument*/
   .controller('ServicesCtrl',['$scope','$http', function ($scope,$http) {
 
-    /*It is a good practices to initialize the values that will be receiving values on the callback*/
+    /*It is a good practice to initialize the values that will be receiving values on the callback*/
     /* because the page will render before our data returns from the request*/
     $scope.data = {
       status: "beforeCall"
