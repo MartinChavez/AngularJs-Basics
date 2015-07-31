@@ -15,7 +15,7 @@ Topics
  - Services
  - Best Practices
  
-*For advanced topics see: <a name="AngularJS : Advanced Topics">(https://github.com/MartinChavez/AngularJS-Advanced-Topics)</a>
+*For advanced topics see: <a name="AngularJS : Advanced Topics">[AngularJS : Advanced Topics](https://github.com/MartinChavez/AngularJS-Advanced-Topics)</a>
  
  
 Tools
