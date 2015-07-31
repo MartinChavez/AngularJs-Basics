@@ -15,6 +15,9 @@ Topics
  - Services
  - Best Practices
  
+*For advanced topics see: <a name="AngularJS : Advanced Topics">(https://github.com/MartinChavez/AngularJS-Advanced-Topics)</a>
+ 
+ 
 Tools
 ====================
 <a name="README">[<img src="http://www.jetbus.io/images/logo-node.png" width="50px" height="50px" />](https://nodejs.org/)</a>
