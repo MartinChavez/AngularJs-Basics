@@ -3,7 +3,7 @@
 AngularJS : Basics
 ================
 
-A project aimed to help the user learn AngularJS basic concepts. Each unit contains a tutorial with concepts, examples and best practices.
+A project aimed to help the user learn AngularJS basic topics. Each unit contains a tutorial with concepts, examples and best practices.
 
 Topics
 ================
