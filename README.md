@@ -1,4 +1,4 @@
-<a name="README">[<img src="https://camo.githubusercontent.com/b377b01b3c1502db0871585f1842e06b3fe35336/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6d656469612d702e736c69642e65732f75706c6f6164732f6875676f6a6f736566736f6e2f696d616765732f38363236372f616e67756c61726a732d6c6f676f2e706e67" width="200px" height="200px" />](https://github.com/MartinChavez/Learn-Javascript)</a>
+<a name="README">[<img src="https://s3-us-west-2.amazonaws.com/testdrivenlearningbucket/square.png" width="200px" height="200px" />](https://github.com/MartinChavez/Learn-Javascript)</a>
 
 AngularJS : Basics
 ================
