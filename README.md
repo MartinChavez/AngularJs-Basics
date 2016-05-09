@@ -1,4 +1,4 @@
-<a name="README">[<img src="https://angularjs.org/img/ng-logo.png" width="200px" height="200px" />](https://github.com/MartinChavez/Learn-Javascript)</a>
+<a name="README">[<img src="https://avatars0.githubusercontent.com/u/139426?v=3&s=400" width="200px" height="200px" />](https://github.com/MartinChavez/Learn-Javascript)</a>
 
 AngularJS : Basics
 ================
