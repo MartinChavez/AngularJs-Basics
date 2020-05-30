@@ -1,4 +1,4 @@
-<a name="README">[<img src="https://martinchavez.github.io/Assets/Logos/angular.svg" width="300px" height="300px" />](https://angular.io</a>
+<a name="README">[<img src="https://martinchavez.github.io/Assets/Logos/angular.svg" width="300px" height="300px" />](https://angular.io)</a>
 
 AngularJS : Basics
 ================
