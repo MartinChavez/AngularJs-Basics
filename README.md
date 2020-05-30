@@ -130,7 +130,7 @@ Run and Play
 ```Terminal
 grunt serve
 ```
-<img src="https://s3-us-west-2.amazonaws.com/testdrivenlearningbucket/AngularRunAndPlay.png" />
+<img src="angular-display.png" />
 
 ## Author
 
